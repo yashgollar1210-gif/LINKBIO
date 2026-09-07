@@ -1,0 +1,6 @@
+{
+  "name": "LinkBio",
+  "description": "A modern Linktree-style bio-link page builder with real-time phone preview, smart platform icon detection, custom themes, and self-contained portable sharing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Thin sleek scrollbar for mock phone frame */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.35);
+    border-radius: 9999px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 163, 184, 0.6);
+  }
+}
+
+@keyframes ambientPulse {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.75;
+  }
+  50% {
+    transform: translate(15px, -20px) scale(1.15);
+    opacity: 0.95;
+  }
+}
+
+@keyframes ambientFloat {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-20px, 25px) scale(1.2);
+    opacity: 0.9;
+  }
+}
+
+.animate-ambient-glow-1 {
+  animation: ambientPulse 12s ease-in-out infinite;
+}
+
+.animate-ambient-glow-2 {
+  animation: ambientFloat 16s ease-in-out infinite;
+}
